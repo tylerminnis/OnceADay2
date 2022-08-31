@@ -50,6 +50,7 @@ function App() {
         <Route path="/"  element={<Home/>} exact/>    
        </Routes> */}
        <Navbar></Navbar>
+       <Home></Home>
        <Footer/>
      </div>
     // {/* </Router> */}
