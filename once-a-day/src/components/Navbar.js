@@ -11,8 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { mdiBook } from '@mdi/js';
+// import AdbIcon from '@mui/icons-material/Adb';
+// import { mdiBook } from '@mdi/js';
 import '@fontsource/roboto';
 
 const pages = ['History', 'About us'];
@@ -38,17 +38,17 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: '#2E3B55' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <mdiBook sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> 
+          {/* <mdiBook sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />  */}
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="/"
-            sx={{
+            sx={{ 
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Roboto',
@@ -97,7 +97,7 @@ const ResponsiveAppBar = () => {
             </Menu>
           </Box>
           {/* this is icon next to title  apparently nvm*/}
-          <mdiBook sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <mdiBook sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap

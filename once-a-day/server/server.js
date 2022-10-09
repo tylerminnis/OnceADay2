@@ -16,8 +16,7 @@ const port = process.env.PORT || 4000;
 app.use(cors())
 
 //connect to database
-mongoose.connect('mongodb+srv://tylerminnis:nuIRvC4QsXdsDdfh@cluster0.ycojqwe.mongodb.net/?retryWrites=true&w=majority',
-                {useNewUrlParser: true, useUnifiedTopology: true})
+
 .then(()=>{
     //start the server
     app.listen(port, host, ()=>{
